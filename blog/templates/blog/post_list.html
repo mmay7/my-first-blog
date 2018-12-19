@@ -10,25 +10,10 @@
 {% for post in posts %}
 <div>
     <p>published: {{ post.published_date }}</p>
-    <p>{{ posts.title }}</p>
+    <h2><a href = "">{{ post }}</a></h2>
     <p>{{ post.text|linebreaksbr }} </p>
 </div>
 {% endfor %}
-<div>
-    <p><a href=""> Post 1</a></p>
-    <p>Welcome to the most exiting blog you will ever see.</p>
-</div>
- <div>
-    <p><a href=""> Post 2</a></p>
-    <p>It's gonna be lit</p>
-</div>
-<div>
-    <p><a href=""> Post 3</a></p>
-    <p>Woah, this is on the real-life internet</p>
-</div>
-<div>
-    <p><a href=""> Post 4</a></p>
-    <p>Peace out</p>
-</div>
+
 </body>
 </html>
