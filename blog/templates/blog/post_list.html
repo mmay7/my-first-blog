@@ -3,10 +3,17 @@
     <title>Madeleine's Blog</title>
 </head>
 <body>
+
 <div>
     <h1><a href="/">Madeleine's Blog</a></h1>
 </div>
-
+{% for post in posts %}
+<div>
+    <p>published: {{ post.published_date }}</p>
+    <p>{{ posts.title }}</p>
+    <p>{{ post.text|linebreaksbr }} </p>
+</div>
+{% endfor %}
 <div>
     <p><a href=""> Post 1</a></p>
     <p>Welcome to the most exiting blog you will ever see.</p>
