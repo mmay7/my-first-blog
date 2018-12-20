@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}! Welcome to the most amazing blog you will ever read
+{% else %}
+  <p>You are no longer logged in, Bye!</p>
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}
